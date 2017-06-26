@@ -18,6 +18,7 @@
             <span *ngIf="!optionTemplate">{{optionList.selection[0].label}}</span>
         </div>
         <div class="placeholder"
+            [title]="placeholderView"
             *ngIf="!optionList.hasSelected">
             {{placeholderView}}
         </div>
@@ -47,6 +48,7 @@
             {{option.label}}
         </div>
         <div class="placeholder"
+            [title]="placeholderView"
             *ngIf="!filterEnabled && !optionList.hasSelected">
             {{placeholderView}}
         </div>
